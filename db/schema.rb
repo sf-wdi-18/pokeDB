@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 20150702003421) do
   enable_extension "plpgsql"
 
   create_table "pokemons", force: :cascade do |t|
-    t.string   "n_dex"
+    t.string   "ndex"
     t.string   "name"
-    t.string   "type"
+    t.string   "kind"
     t.string   "photo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
