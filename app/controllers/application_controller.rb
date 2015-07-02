@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   private
 
   def verify_token
-    if params[:api_key].upcase != Rails.application.secrets.api_key
+    if params[:api_key].nil? || params[:api_key].upcase != Rails.application.secrets.api_key
       render json: {status: 401} #unauthorized
     end  
   end
