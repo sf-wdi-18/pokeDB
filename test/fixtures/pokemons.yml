@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  n_dex: MyString
+  name: MyString
+  type: 
+  photo_url: MyString
+
+two:
+  n_dex: MyString
+  name: MyString
+  type: 
+  photo_url: MyString
