@@ -13,7 +13,7 @@ pokemon_data = HTTParty.get("https://www.kimonolabs.com/api/74dfm89w?apikey=Zgn8
 pokemons = pokemon_data["results"]["collection1"]
 
 pokemons.each do |pokemon|
-  new_poke = Pokemon.new({
+  Pokemon.create!({
     ndex: pokemon["nDex"],
     name: pokemon["name"]["text"],
     kind: pokemon["type"]["text"],
