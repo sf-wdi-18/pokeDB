@@ -17,6 +17,6 @@ pokemons.each do |pokemon|
     ndex: pokemon["nDex"],
     name: pokemon["name"]["text"],
     kind: pokemon["type"]["text"],
-    photo_url: pokemon["image"]["src"]
+    photo_url: pokemon["image"]["href"]
   })
 end
